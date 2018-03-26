@@ -26,6 +26,7 @@ var commonPlugins = [
     inject: 'body',
     template: path.resolve(__dirname, '../src/index.html'),
     favicon: path.resolve(__dirname, '../src/assets/images/favicon.ico')
+    // favicon: path.resolve(__dirname, '../src/assets/images/anyonebook-logo-black.png')
   }),
   new webpack.LoaderOptionsPlugin({
     minimize: isProduction,

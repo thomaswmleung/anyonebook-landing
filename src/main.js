@@ -8,7 +8,7 @@ import pricing from 'components/pricing/pricing';
 import download from 'components/download/download';
 import contact from 'components/contact/contact';
 import pageFooter from 'components/pageFooter/page-footer';
-
+import chiAnyOne from 'components/chiAnyOne/chi-any-one';
 import 'src/style.scss';
 
 new vue({
@@ -21,5 +21,6 @@ new vue({
     download,
     contact,
     pageFooter,
+    chiAnyOne
   },
 }).$mount('#app');
