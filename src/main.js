@@ -1,4 +1,4 @@
-import vue from 'vue';
+import Vue from 'vue';
 
 import navigation from 'components/navigation/navigation';
 import home from 'components/home/home';
@@ -11,7 +11,7 @@ import pageFooter from 'components/pageFooter/page-footer';
 import chiAnyOne from 'components/chiAnyOne/chi-any-one';
 import 'src/style.scss';
 
-new vue({
+new Vue({
   components: {
     navigation,
     home,

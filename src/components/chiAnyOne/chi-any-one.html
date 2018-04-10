@@ -15,7 +15,17 @@
           <p>
             配合全港性系統評估 中一入學前學科測驗及現有課程。自選同步漸進式分類練習，程度深淺，進度隨意。自選模擬目録，教學同步。
           </p>
-          <button class="btn btn-primary">詳細資料</button>
+          <div class="form-group" style="margin-bottom: .2em">
+            <select class="form-control" @change="onGradeChange($event,'chinese_mock100_progressive')" >
+                <option value="p6">六年級</option>
+                <option value="p5">五年級</option>
+                <option value="p4">四年級</option>
+                <option value="p3">三年級</option>
+                <option value="p2">二年級</option>
+                <option value="p1">一年級</option>
+            </select>
+         </div>
+          <button class="btn btn-primary" style="margin: 0.2em" @click.stop="gotoBookToc($event,'chinese_mock100_progressive')">詳細資料</button>
         </div>
       </div>
       <div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
@@ -29,7 +39,17 @@
           <p>
               同一封面,同樣題型，三層解難程度，為能力差異同學做好準備。自選模擬目錄，各適其適，內容全新修訂，百分百教學同步。 
           </p>
-          <button class="btn btn-primary text-uppercase">詳細資料</button>
+          <div class="form-group" style="margin-bottom: .2em">
+            <select class="form-control"  @change="onGradeChange($event,'chinese_mock100_at')" >
+                <option value="p6">六年級</option>
+                <option value="p5">五年級</option>
+                <option value="p4">四年級</option>
+                <option value="p3">三年級</option>
+                <option value="p2">二年級</option>
+                <option value="p1">一年級</option>
+            </select>
+         </div>
+          <button class="btn btn-primary" style="margin: 0.2em" @click.stop="gotoBookToc($event,'chinese_mock100_at')">詳細資料</button>
         </div>
       </div>
       <div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
@@ -43,7 +63,17 @@
           <p>
             主題題型選業 自選文章主題涵蓋史地方鋪名人傳記燈包羅萬象題目題型包括at bca和 常規題型  題型多樣 自選聆聽和時順練習教學同步
           </p>
-          <button class="btn btn-primary text-uppercase">詳細資料</button>
+          <div class="form-group" style="margin-bottom: .2em">
+            <select class="form-control" @change="onGradeChange($event,'chinese_anyone')">
+                <option value="p6">六年級</option>
+                <option value="p5">五年級</option>
+                <option value="p4">四年級</option>
+                <option value="p3">三年級</option>
+                <option value="p2">二年級</option>
+                <option value="p1">一年級</option>
+            </select>
+         </div>
+          <button class="btn btn-primary" style="margin: 0.2em" @click.stop="gotoBookToc($event,'chinese_anyone')">詳細資料</button>
         </div>
       </div>
     </div>
